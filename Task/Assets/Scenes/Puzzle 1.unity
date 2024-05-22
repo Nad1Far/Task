@@ -8477,6 +8477,11 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9079006068326514215, guid: 78df1db2fbc8ec64f949fac0c05bf693,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1369713332}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78df1db2fbc8ec64f949fac0c05bf693, type: 3}
 --- !u!1001 &533700370
@@ -18418,7 +18423,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 047293af1bef8144bad8b08db186c945, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 1369713332}
   ButtonIs: 0
+  Distance: 0
 --- !u!54 &1238829370
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23964,7 +23971,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 047293af1bef8144bad8b08db186c945, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 1369713332}
   ButtonIs: 0
+  Distance: 0
 --- !u!54 &1570493550
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24572,6 +24581,11 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9079006068326514215, guid: 78df1db2fbc8ec64f949fac0c05bf693,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1369713332}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78df1db2fbc8ec64f949fac0c05bf693, type: 3}
 --- !u!1001 &1632068636
