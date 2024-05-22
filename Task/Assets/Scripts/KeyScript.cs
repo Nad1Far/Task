@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class KeyScript : MonoBehaviour
 {
+    public GameObject Player;
+
     public bool KeyIs = false;
 
-    private void OnCollisionEnter(Collision collision)
+    private void Update()
     {
-        if (collision.gameObject.tag == "Player")
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            KeyIs = true;
-            gameObject.transform.position = new Vector3(100, 100, 100);
+            if (Vector3.Distance(Player.transform.position, transform.position) <= 20)
+            {
+                KeyIs = true;
+                gameObject.transform.position = new Vector3(100, 100, 100);
+            }
+
         }
     }
 }

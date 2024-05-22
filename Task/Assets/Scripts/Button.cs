@@ -4,24 +4,33 @@ using UnityEngine;
 
 public class Button : MonoBehaviour
 {
+    
     Renderer lr;
+
+    public GameObject Player;
     public bool ButtonIs = false;
+    public float Distance; 
+
     void Start()
     {
         lr = GetComponent<Renderer>();
     }
 
-    void Update()
+    private void Update()
     {
-        
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Player")
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            lr.material.color = Color.green;
-            ButtonIs = true;
+            if (Vector3.Distance(Player.transform.position, transform.position) <= 20)
+            {
+                ButtonIs = true;
+                lr.material.color = Color.green;
+            }
+           
         }
     }
+
+
+
+
+
 }
