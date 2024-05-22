@@ -18328,8 +18328,8 @@ GameObject:
   - component: {fileID: 1238829367}
   - component: {fileID: 1238829366}
   - component: {fileID: 1238829365}
-  - component: {fileID: 1238829369}
   - component: {fileID: 1238829370}
+  - component: {fileID: 1238829369}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -18425,7 +18425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 1369713332}
   ButtonIs: 0
-  Distance: 0
+  Distance: 20
 --- !u!54 &1238829370
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23876,8 +23876,8 @@ GameObject:
   - component: {fileID: 1570493547}
   - component: {fileID: 1570493546}
   - component: {fileID: 1570493545}
-  - component: {fileID: 1570493549}
   - component: {fileID: 1570493550}
+  - component: {fileID: 1570493549}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -23973,7 +23973,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 1369713332}
   ButtonIs: 0
-  Distance: 0
+  Distance: 20
 --- !u!54 &1570493550
 Rigidbody:
   m_ObjectHideFlags: 0
