@@ -10,26 +10,41 @@ public class KeyScript : MonoBehaviour
     public float Distance;
     public bool KeyIs = false;
 
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (Vector3.Distance(Player.transform.position, transform.position) <= Distance)
+            if (Vector3.Distance(Player.transform.position, transform.position) <= Distance && Player.GetComponent<Arms>().RightArmClear == true)
             {
                 KeyIs = true;
-                gameObject.transform.position = new Vector3(100, 100, 100);
                 SignE.SetActive(false);
-            }
+                if (Player.GetComponent<Arms>().RightArmClear == true)
+                {
+
+                    Player.GetComponent<Arms>().RightArmClear = false;
+                    
+                }
+            }  
         }
 
-            if (Vector3.Distance(Player.transform.position, transform.position) <= Distance && KeyIs == false)
+        if (Vector3.Distance(Player.transform.position, transform.position) <= Distance && KeyIs == false)
+        {
+            SignE.SetActive(true);
+            if (Player.GetComponent<Arms>().RightArmClear == false)
             {
-                SignE.SetActive(true);
+                SignE.GetComponent<Renderer>().material.color = Color.red;
             }
-            else
-            {
-                SignE.SetActive(false);
-            }
+        }
+        else
+        {
+            SignE.SetActive(false);
+        }
         
+        if (KeyIs == true && Player.GetComponent<Arms>().RightArmClear == false)
+        {
+            transform.position = Player.GetComponent<Arms>().RightArm.transform.position;
+
+        }
     }
 }

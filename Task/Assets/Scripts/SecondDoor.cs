@@ -4,29 +4,60 @@ using UnityEngine;
 
 public class SecondDoor : MonoBehaviour
 {
+    public GameObject Player;
     public GameObject FirstKey;
     public GameObject SecondKey;
     public GameObject Door;
+    public GameObject SignE;
 
-    private bool FirstKeyIsCollected = false;
-    private bool SecondKeyIsCollected = false;
+    public float Distance;
+
+    public bool FirstKeyIsCollected = false;
+    public bool SecondKeyIsCollected = false;
 
 
     void Update()
     {
-        if (FirstKey.GetComponent<KeyScript>().KeyIs == true)
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                if (Vector3.Distance(Player.transform.position, Door.transform.position) <= Distance && Player.GetComponent<Arms>().RightArmClear == false && FirstKey.GetComponent<KeyScript>().KeyIs == true)
+                {
+                    FirstKey.SetActive(false);
+                    Player.GetComponent<Arms>().RightArmClear = true;
+                    FirstKeyIsCollected = true;
+                    SignE.SetActive(false);
+
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                if (Vector3.Distance(Player.transform.position, Door.transform.position) <= Distance && Player.GetComponent<Arms>().RightArmClear == false && SecondKey.GetComponent<KeyScript>().KeyIs ==true)
+                {
+                    SecondKey.SetActive(false);
+                    Player.GetComponent<Arms>().RightArmClear = true;
+                    SecondKeyIsCollected = true;
+                    SignE.SetActive(false);
+
+                }
+            }
+
+
+        if (Vector3.Distance(Player.transform.position, Door.transform.position) <= Distance)
         {
-            FirstKeyIsCollected = true;
+            SignE.SetActive(true);
+
+        }
+        else
+        {
+            SignE.SetActive(false);
         }
 
-        if (SecondKey.GetComponent<KeyScript>().KeyIs == true)
+        if (FirstKeyIsCollected == true)
         {
-            SecondKeyIsCollected = true;
-        }
-
-        if (FirstKeyIsCollected == true && SecondKeyIsCollected == true)
-        {
-            Door.transform.position = new Vector3(0, 0, 0);
+            Door.SetActive(false);
+            SignE.transform.position = new Vector3(100, 100, 100);
+            SignE.SetActive(false);
         }
     }
 }
