@@ -5,6 +5,7 @@ using UnityEngine;
 public class KeyScript : MonoBehaviour
 {
     public GameObject Player;
+    public GameObject SignE;
 
     public float Distance;
     public bool KeyIs = false;
@@ -17,8 +18,18 @@ public class KeyScript : MonoBehaviour
             {
                 KeyIs = true;
                 gameObject.transform.position = new Vector3(100, 100, 100);
+                SignE.SetActive(false);
             }
-
         }
+
+            if (Vector3.Distance(Player.transform.position, transform.position) <= Distance && KeyIs == false)
+            {
+                SignE.SetActive(true);
+            }
+            else
+            {
+                SignE.SetActive(false);
+            }
+        
     }
 }

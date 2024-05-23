@@ -33,5 +33,9 @@ public class Button : MonoBehaviour
         {
             SignE.SetActive(true);
         }
+        else
+        {
+            SignE.SetActive(false);
+        }
     }
 }
