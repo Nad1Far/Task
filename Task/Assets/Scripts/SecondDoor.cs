@@ -6,7 +6,6 @@ public class SecondDoor : MonoBehaviour
 {
     public GameObject Player;
     public GameObject FirstKey;
-    public GameObject SecondKey;
     public GameObject Door;
     public GameObject SignE;
 
@@ -25,18 +24,6 @@ public class SecondDoor : MonoBehaviour
                     FirstKey.SetActive(false);
                     Player.GetComponent<Arms>().RightArmClear = true;
                     FirstKeyIsCollected = true;
-                    SignE.SetActive(false);
-
-                }
-            }
-
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                if (Vector3.Distance(Player.transform.position, Door.transform.position) <= Distance && Player.GetComponent<Arms>().RightArmClear == false && SecondKey.GetComponent<KeyScript>().KeyIs ==true)
-                {
-                    SecondKey.SetActive(false);
-                    Player.GetComponent<Arms>().RightArmClear = true;
-                    SecondKeyIsCollected = true;
                     SignE.SetActive(false);
 
                 }

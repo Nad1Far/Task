@@ -875,6 +875,11 @@ PrefabInstance:
       propertyPath: Bullet
       value: 
       objectReference: {fileID: 185262783}
+    - target: {fileID: 4929400562172839050, guid: 9104a4fe3c7a8974f9cb029e0b25f9d5,
+        type: 3}
+      propertyPath: StartTimeBtwSpawn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6365502551894661287, guid: 9104a4fe3c7a8974f9cb029e0b25f9d5,
         type: 3}
       propertyPath: m_Enabled
@@ -7210,6 +7215,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 6746105742991207348, guid: 81b22a71929faba4ba289935a85dc7d9,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8821372653165893205, guid: 81b22a71929faba4ba289935a85dc7d9,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9220942861289183091, guid: 81b22a71929faba4ba289935a85dc7d9,
         type: 3}
       propertyPath: m_Name
@@ -9258,6 +9273,11 @@ PrefabInstance:
       propertyPath: Bullet
       value: 
       objectReference: {fileID: 185262783}
+    - target: {fileID: 4929400562172839050, guid: 9104a4fe3c7a8974f9cb029e0b25f9d5,
+        type: 3}
+      propertyPath: StartTimeBtwSpawn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6365502551894661287, guid: 9104a4fe3c7a8974f9cb029e0b25f9d5,
         type: 3}
       propertyPath: m_Enabled
@@ -12057,7 +12077,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 1369713332}
   FirstKey: {fileID: 1250518638}
-  SecondKey: {fileID: 1770353713}
   Door: {fileID: 1679795000}
   SignE: {fileID: 641083018}
   Distance: 10
@@ -28252,6 +28271,11 @@ PrefabInstance:
       propertyPath: Bullet
       value: 
       objectReference: {fileID: 185262783}
+    - target: {fileID: 4929400562172839050, guid: 9104a4fe3c7a8974f9cb029e0b25f9d5,
+        type: 3}
+      propertyPath: StartTimeBtwSpawn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6365502551894661287, guid: 9104a4fe3c7a8974f9cb029e0b25f9d5,
         type: 3}
       propertyPath: m_Enabled
@@ -28532,6 +28556,11 @@ PrefabInstance:
       propertyPath: Bullet
       value: 
       objectReference: {fileID: 185262783}
+    - target: {fileID: 4929400562172839050, guid: 9104a4fe3c7a8974f9cb029e0b25f9d5,
+        type: 3}
+      propertyPath: StartTimeBtwSpawn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6365502551894661287, guid: 9104a4fe3c7a8974f9cb029e0b25f9d5,
         type: 3}
       propertyPath: m_Enabled
@@ -33651,6 +33680,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8335763471487586467, guid: a361f008e59b5ef4db264d593e770d80,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8798264598545477062, guid: a361f008e59b5ef4db264d593e770d80,
         type: 3}
       propertyPath: m_Name
@@ -33711,5 +33745,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8798264598545477066, guid: a361f008e59b5ef4db264d593e770d80,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798264598545477066, guid: a361f008e59b5ef4db264d593e770d80,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8335763471487586467, guid: a361f008e59b5ef4db264d593e770d80, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a361f008e59b5ef4db264d593e770d80, type: 3}

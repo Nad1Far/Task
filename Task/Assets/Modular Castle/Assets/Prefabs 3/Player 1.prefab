@@ -107,7 +107,6 @@ GameObject:
   - component: {fileID: 3250177741757980106}
   - component: {fileID: 6207803424234444879}
   - component: {fileID: 723263928427930611}
-  - component: {fileID: 2227773444420691798}
   m_Layer: 0
   m_Name: LeftArm
   m_TagString: Untagged
@@ -176,19 +175,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &2227773444420691798
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2926360531425543349}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7568016975769662486
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +186,6 @@ GameObject:
   - component: {fileID: 5026881671357668910}
   - component: {fileID: 4868574372819184184}
   - component: {fileID: 4285894277280838668}
-  - component: {fileID: 8094921489582465260}
   m_Layer: 0
   m_Name: RightArm
   m_TagString: Untagged
@@ -269,19 +254,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &8094921489582465260
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7568016975769662486}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8798264598545477062
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,6 +268,7 @@ GameObject:
   - component: {fileID: 8798264598545477066}
   - component: {fileID: 8798264598545477067}
   - component: {fileID: 2928082803260997166}
+  - component: {fileID: 2128530812082859800}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Untagged
@@ -392,8 +365,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c450c397f80a64e40b2176905ebde156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RightArmClear: 1
+  LeftArmClear: 1
   RightArm: {fileID: 7568016975769662486}
   LeftArm: {fileID: 2926360531425543349}
+--- !u!114 &2128530812082859800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8798264598545477062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0208e1aae1c1124b844f8ac5fce8b18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8798264598808509481
 GameObject:
   m_ObjectHideFlags: 0
