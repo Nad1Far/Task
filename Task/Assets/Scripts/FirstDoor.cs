@@ -8,9 +8,14 @@ public class FirstDoor : MonoBehaviour
     public GameObject FirstBut;
     public GameObject SecondBut;
     public GameObject Door;
+    public GameObject DoorInDoor;
+
+    public float targetYAngle;
+    public float rotateTime;
 
     private bool FirstButIsPressed = false;
     private bool SecondButIsPressed = false;
+
 
 
     void Update()
@@ -27,8 +32,28 @@ public class FirstDoor : MonoBehaviour
 
         if (FirstButIsPressed == true && SecondButIsPressed == true)
         {
-            Door.transform.position = new Vector3(0, 0, 0);
+            StartCoroutine(RotateObjectSmoothly());
+            Door.GetComponent<BoxCollider>().enabled = false;
         }
+
+    }
+
+
+    IEnumerator RotateObjectSmoothly()
+    {
+        Quaternion startRotation = DoorInDoor.transform.rotation;
+        Quaternion targetRotation = Quaternion.Euler(DoorInDoor.transform.rotation.x, targetYAngle, DoorInDoor.transform.rotation.z);
+
+        float elapsedTime = 0f;
+
+        while (elapsedTime < rotateTime)
+        {
+            DoorInDoor.transform.rotation = Quaternion.Lerp(startRotation, targetRotation, elapsedTime / rotateTime);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        DoorInDoor.transform.rotation = targetRotation;
     }
 
 }

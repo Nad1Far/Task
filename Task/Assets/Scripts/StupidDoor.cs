@@ -8,7 +8,10 @@ public class StupidDoor : MonoBehaviour
     public GameObject Player;
     public GameObject SignE;
     public GameObject Key;
+    public GameObject DoorInDoor;
 
+    public float targetYAngle;
+    public float rotateTime;
     public float Distance;
 
 
@@ -20,10 +23,11 @@ public class StupidDoor : MonoBehaviour
             {
                 SignE.transform.position = new Vector3(100, 100, 100);
                 SignE.SetActive(false);
-                gameObject.SetActive(false);
                 Key.transform.position = new Vector3(100, 100, 100);
                 Key.SetActive(false);
                 Player.GetComponent<Arms>().RightArmClear = true;
+                StartCoroutine(RotateObjectSmoothly());
+                GetComponent<BoxCollider>().enabled = false;
             }
         }
 
@@ -45,5 +49,23 @@ public class StupidDoor : MonoBehaviour
         {
             SignE.GetComponent<Renderer>().material.color = Color.white;
         }
+    }
+
+
+    IEnumerator RotateObjectSmoothly()
+    {
+        Quaternion startRotation = DoorInDoor.transform.rotation;
+        Quaternion targetRotation = Quaternion.Euler(DoorInDoor.transform.rotation.x, targetYAngle, DoorInDoor.transform.rotation.z);
+
+        float elapsedTime = 0f;
+
+        while (elapsedTime < rotateTime)
+        {
+            DoorInDoor.transform.rotation = Quaternion.Lerp(startRotation, targetRotation, elapsedTime / rotateTime);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        DoorInDoor.transform.rotation = targetRotation;
     }
 }
