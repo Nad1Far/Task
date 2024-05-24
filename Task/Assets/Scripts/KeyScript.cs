@@ -43,6 +43,7 @@ public class KeyScript : MonoBehaviour
         
         if (KeyIs == true && Player.GetComponent<Arms>().RightArmClear == false)
         {
+            transform.rotation = Player.GetComponent<Arms>().RightArm.transform.rotation;
             transform.position = Player.GetComponent<Arms>().RightArm.transform.position;
 
         }
