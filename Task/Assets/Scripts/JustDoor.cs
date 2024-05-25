@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SecondStupidDoor : MonoBehaviour
+public class JustDoor : MonoBehaviour
 {
     public GameObject Player;
     public GameObject DoorInDoor;
@@ -22,6 +22,7 @@ public class SecondStupidDoor : MonoBehaviour
                 StartCoroutine(RotateObjectSmoothly());
                 SignE.SetActive(false);
                 DoorIs = true;
+                gameObject.GetComponent<BoxCollider>().enabled = false;
             }
         }
 
