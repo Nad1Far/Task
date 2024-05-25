@@ -7261,6 +7261,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 386797910}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &390815366 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 196402, guid: 0b7f3b033306b6d4b956436528383403,
+    type: 3}
+  m_PrefabInstance: {fileID: 878121900}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &391994128
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20850,6 +20856,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1276014035}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1278420716 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 118334, guid: 0b7f3b033306b6d4b956436528383403,
+    type: 3}
+  m_PrefabInstance: {fileID: 878121900}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1278420720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278420716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c022def67d73134da738267403ec842, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 1369713332}
+  DoorInDoor: {fileID: 390815366}
+  SignE: {fileID: 1791056830}
+  targetYAngle: 1550
+  rotateTime: 1
+  Distance: 10
+  DoorIs: 0
 --- !u!1001 &1280494851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29824,6 +29855,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62,
     type: 3}
   m_PrefabInstance: {fileID: 1785473800}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1791056830 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8331655115174918898, guid: 1c0271048eff2534bbd7399d0a4ca800,
+    type: 3}
+  m_PrefabInstance: {fileID: 1153463226}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1792527982
 PrefabInstance:
