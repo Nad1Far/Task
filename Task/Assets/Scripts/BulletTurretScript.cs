@@ -9,7 +9,6 @@ public class BulletTurretScript : MonoBehaviour
     public float StartTimeBtwSpawn;
     public int n;
 
-
     private float TimeBtwSpawn;
 
 
@@ -21,10 +20,9 @@ public class BulletTurretScript : MonoBehaviour
 
     private void Update()
     {
-   
         if (TimeBtwSpawn<=0)
         {
-            Instantiate(Bullet, (, transform.rotation);
+            Instantiate(Bullet, transform.position, transform.rotation);
             TimeBtwSpawn = StartTimeBtwSpawn;
         }
         else
