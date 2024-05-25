@@ -24,7 +24,7 @@ public class BulletTurretScript : MonoBehaviour
    
         if (TimeBtwSpawn<=0)
         {
-            Instantiate(Bullet, new Vector3(transform.position.x + n, transform.position.y, transform.position.z), transform.rotation);
+            Instantiate(Bullet, (, transform.rotation);
             TimeBtwSpawn = StartTimeBtwSpawn;
         }
         else
