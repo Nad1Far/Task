@@ -5,6 +5,7 @@ using UnityEngine;
 public class BulletTurretScript : MonoBehaviour
 {
     public GameObject Bullet;
+    public GameObject BulletSpawner;
 
     public float StartTimeBtwSpawn;
     public int n;
@@ -20,9 +21,11 @@ public class BulletTurretScript : MonoBehaviour
 
     private void Update()
     {
+        BulletSpawner.transform.rotation = gameObject.transform.rotation;
+
         if (TimeBtwSpawn<=0)
         {
-            Instantiate(Bullet, transform.position, transform.rotation);
+            Instantiate(Bullet, BulletSpawner.transform.position, gameObject.transform.rotation);
             TimeBtwSpawn = StartTimeBtwSpawn;
         }
         else
