@@ -10,28 +10,47 @@ public class SeventhRoom : MonoBehaviour
     public GameObject SignE;
     public GameObject Button;
 
+    public bool DoorIs = false;
     public bool ButtonIs = false;
+
     public float Distance;
     public float targetYAngle;
     public float rotateTime;
 
     void Update()
     {
+        if (Button.GetComponent<Button>().ButtonIs == true)
+        {
+            ButtonIs = true;
+        }
+
+
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (Vector3.Distance(Player.transform.position, transform.position) <= Distance && Button.GetComponent<Button>().ButtonIs == true)
+            if (Vector3.Distance(Player.transform.position, Door.transform.position) <= Distance && ButtonIs == true)
             {
                 StartCoroutine(RotateObjectSmoothly());
                 SignE.SetActive(false);
                 Door.GetComponent<BoxCollider>().enabled = false;
-                ButtonIs = true;
+                DoorIs = true;
             }
         }
 
-        if (Vector3.Distance(Player.transform.position, transform.position) <= Distance && ButtonIs == false)
+        if (Vector3.Distance(Player.transform.position, Door.transform.position) <= Distance && ButtonIs == false)
         {
             SignE.SetActive(true);
+            SignE.GetComponent<Renderer>().material.color = Color.red;
         }
+        if (Vector3.Distance(Player.transform.position, Door.transform.position) <= Distance && ButtonIs == true && DoorIs == false)
+        {
+            SignE.SetActive(true);
+            SignE.GetComponent<Renderer>().material.color = Color.white;
+        }
+        if (Vector3.Distance(Player.transform.position, Door.transform.position) >= Distance)
+        {
+            SignE.SetActive(false);
+        }
+
     }
 
     IEnumerator RotateObjectSmoothly()
