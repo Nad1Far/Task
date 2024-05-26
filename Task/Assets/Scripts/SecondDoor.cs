@@ -29,7 +29,6 @@ public class SecondDoor : MonoBehaviour
                 FirstKeyIsCollected = true;
                 SignE.SetActive(false);
                 StartCoroutine(RotateObjectSmoothly());
-                SignE.SetActive(false);
                 Door.GetComponent<BoxCollider>().enabled = false;
             }
         }
