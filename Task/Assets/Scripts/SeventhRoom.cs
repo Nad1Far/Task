@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SeventhRoom : MonoBehaviour
 {
+    public AudioSource DoorOpening;
+
     public GameObject Player;
     public GameObject Door;
     public GameObject DoorInDoor;
@@ -33,6 +35,7 @@ public class SeventhRoom : MonoBehaviour
                 SignE.SetActive(false);
                 Door.GetComponent<BoxCollider>().enabled = false;
                 DoorIs = true;
+                DoorOpening.Play();
             }
         }
 

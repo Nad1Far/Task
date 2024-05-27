@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class JustDoor : MonoBehaviour
 {
+    public AudioSource DoorOpening;
+
     public GameObject Player;
     public GameObject DoorInDoor;
     public GameObject SignE;
@@ -23,6 +25,7 @@ public class JustDoor : MonoBehaviour
                 SignE.SetActive(false);
                 DoorIs = true;
                 gameObject.GetComponent<BoxCollider>().enabled = false;
+                DoorOpening.Play();
             }
         }
 

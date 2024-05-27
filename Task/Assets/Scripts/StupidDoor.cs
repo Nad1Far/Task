@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class StupidDoor : MonoBehaviour
 {
+    public AudioSource DoorOpening;
 
     public GameObject Player;
     public GameObject SignE;
@@ -28,6 +29,7 @@ public class StupidDoor : MonoBehaviour
                 Player.GetComponent<Arms>().RightArmClear = true;
                 StartCoroutine(RotateObjectSmoothly());
                 GetComponent<BoxCollider>().enabled = false;
+                DoorOpening.Play();
             }
         }
 

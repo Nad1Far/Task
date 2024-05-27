@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SecondDoor : MonoBehaviour
 {
+    public AudioSource DoorOpening;
+
     public GameObject Player;
     public GameObject FirstKey;
     public GameObject Door;
@@ -30,6 +32,7 @@ public class SecondDoor : MonoBehaviour
                 SignE.SetActive(false);
                 StartCoroutine(RotateObjectSmoothly());
                 Door.GetComponent<BoxCollider>().enabled = false;
+                DoorOpening.Play();
             }
         }
 
