@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FirstDoor : MonoBehaviour
 {
+    public AudioSource DoorOpening;
 
     public GameObject FirstBut;
     public GameObject SecondBut;
@@ -34,6 +35,7 @@ public class FirstDoor : MonoBehaviour
         {
             StartCoroutine(RotateObjectSmoothly());
             Door.GetComponent<BoxCollider>().enabled = false;
+            DoorOpening.Play();
         }
 
     }
