@@ -6,8 +6,12 @@ public class Button : MonoBehaviour
 {
     
     Renderer lr;
+
+    public AudioSource ButSound;
+
     public GameObject SignE;
     public GameObject Player;
+
     public bool ButtonIs = false;
     public float Distance;
     
@@ -26,6 +30,7 @@ public class Button : MonoBehaviour
                 ButtonIs = true;
                 lr.material.color = Color.green;
                 SignE.SetActive(false);
+                ButSound.Play();
             }
            
         }
