@@ -6,14 +6,18 @@ public class FirstDoor : MonoBehaviour
 {
     public AudioSource DoorOpening;
 
+    public GameObject Player;
     public GameObject FirstBut;
     public GameObject SecondBut;
     public GameObject Door;
     public GameObject DoorInDoor;
+    public GameObject SignE;
 
+    public float Distance;
     public float targetYAngle;
     public float rotateTime;
 
+    private bool DoorIs = false;
     private bool FirstButIsPressed = false;
     private bool SecondButIsPressed = false;
 
@@ -31,11 +35,39 @@ public class FirstDoor : MonoBehaviour
             SecondButIsPressed = true;
         }
 
-        if (FirstButIsPressed == true && SecondButIsPressed == true)
+
+
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            StartCoroutine(RotateObjectSmoothly());
-            Door.GetComponent<BoxCollider>().enabled = false;
-            DoorOpening.Play();
+            if (Vector3.Distance(Player.transform.position, Door.transform.position) <= Distance)
+            {
+                if (FirstButIsPressed == true && SecondButIsPressed == true)
+                {
+                    StartCoroutine(RotateObjectSmoothly());
+                    Door.GetComponent<BoxCollider>().enabled = false;
+                    DoorOpening.Play();
+                    SignE.SetActive(false);
+                    DoorIs = true;
+                }
+            }
+        }
+
+        if (Vector3.Distance(Player.transform.position, Door.transform.position) <= Distance && DoorIs == false)
+        {
+            SignE.SetActive(true);
+
+            if (FirstButIsPressed == true && SecondButIsPressed == true)
+            {
+                SignE.GetComponent<Renderer>().material.color = Color.white;
+            }
+            else
+            {
+                SignE.GetComponent<Renderer>().material.color = Color.red;
+            }
+        }
+        if (Vector3.Distance(Player.transform.position, Door.transform.position) >= Distance)
+        {
+            SignE.SetActive(false);
         }
 
     }

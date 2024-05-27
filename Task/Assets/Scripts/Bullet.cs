@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+
+    public float Distance;
     public int speed = 1;
 
     void FixedUpdate()

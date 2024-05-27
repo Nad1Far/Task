@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LaserTurret : MonoBehaviour
 {
+    public AudioSource LaserStartSound;
     public AudioSource LaserSound;
 
     public GameObject Player;
@@ -17,13 +18,12 @@ public class LaserTurret : MonoBehaviour
     public float StartTimerOfNothing;
     private float TimerOfNothing; //Время бездейсвия лазера
 
-    private bool LaserSoundIs = false;
-
 
     void Update()
     {
         if (Laser.activeSelf == true)
         {
+
             LaserTimer -= Time.deltaTime;
             if (LaserTimer <= 0)
             {
@@ -38,13 +38,14 @@ public class LaserTurret : MonoBehaviour
 
             if(TimerOfNothing <= 0)
             {
+                Laser.SetActive(true);
+                LaserTimer = StartLaserTimer;
+                TimerOfNothing = StartTimerOfNothing;
+
                 if (Vector3.Distance(Player.transform.position, transform.position) <= Distance)
                 {
                     LaserSound.Play();
                 }
-                Laser.SetActive(true);
-                LaserTimer = StartLaserTimer;
-                TimerOfNothing = StartTimerOfNothing;
             }
         }
     }
