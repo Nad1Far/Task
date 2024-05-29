@@ -24,7 +24,7 @@ public class PlayerHealth : MonoBehaviour
             SceneManager.LoadScene("Menu");
         }
 
-        if (Input.GetKeyDown(KeyCode.Backspace) && GameOverUI.activeSelf == true)
+        if (Input.GetKeyDown(KeyCode.Space) && GameOverUI.activeSelf == true)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }

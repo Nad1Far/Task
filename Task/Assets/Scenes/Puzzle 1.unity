@@ -73727,10 +73727,20 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3788755439079315456, guid: a361f008e59b5ef4db264d593e770d80,
+        type: 3}
+      propertyPath: m_text
+      value: Press space to replay
+      objectReference: {fileID: 0}
     - target: {fileID: 8335763471487586467, guid: a361f008e59b5ef4db264d593e770d80,
         type: 3}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8753297733356516262, guid: a361f008e59b5ef4db264d593e770d80,
+        type: 3}
+      propertyPath: m_Name
+      value: Space
       objectReference: {fileID: 0}
     - target: {fileID: 8798264598545477062, guid: a361f008e59b5ef4db264d593e770d80,
         type: 3}
