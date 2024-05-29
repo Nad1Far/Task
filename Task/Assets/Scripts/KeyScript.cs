@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class KeyScript : MonoBehaviour
 {
+    public AudioSource KeySound;
     public GameObject Player;
     public GameObject SignE;
 
@@ -19,6 +20,7 @@ public class KeyScript : MonoBehaviour
             {
                 KeyIs = true;
                 SignE.SetActive(false);
+                KeySound.Play();
                 if (Player.GetComponent<Arms>().RightArmClear == true)
                 {
 

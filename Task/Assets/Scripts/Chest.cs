@@ -21,6 +21,8 @@ public class Chest : MonoBehaviour
                 SignE.SetActive(false);
                 ChestIs = true;
                 WinText.SetActive(true);
+                Player.GetComponent<PlayerController>().enabled = false;
+                Player.GetComponent<CameraController>().enabled = false;
             }
         }
 
