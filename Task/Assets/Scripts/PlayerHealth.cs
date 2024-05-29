@@ -13,7 +13,7 @@ public class PlayerHealth : MonoBehaviour
             GameOverUI.SetActive(true);
             GetComponent<PlayerController>().enabled = false;
             GetComponent<CameraController>().enabled = false;
-
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 
@@ -23,6 +23,7 @@ public class PlayerHealth : MonoBehaviour
         {
             SceneManager.LoadScene("Menu");
         }
+
         if (Input.GetKeyDown(KeyCode.Backspace) && GameOverUI.activeSelf == true)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
