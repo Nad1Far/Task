@@ -21,7 +21,12 @@ public class PlayerHealth : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && GameOverUI.activeSelf == true)
         {
+            SceneManager.LoadScene("Menu");
+        }
+        if (Input.GetKeyDown(KeyCode.Backspace) && GameOverUI.activeSelf == true)
+        {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
     }
 }
