@@ -11,7 +11,17 @@ public class PlayerHealth : MonoBehaviour
         if(other.gameObject.tag == "Bullet" || other.gameObject.tag == "Laser" || other.gameObject.tag == "Shape")
         {
             GameOverUI.SetActive(true);
+            GetComponent<PlayerController>().enabled = false;
+            GetComponent<CameraController>().enabled = false;
+
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && GameOverUI.activeSelf == true)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
 }
