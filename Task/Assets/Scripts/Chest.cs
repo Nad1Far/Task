@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Chest : MonoBehaviour
 {
-
+    public GameObject WinText;
     public GameObject SignE;
     public GameObject Player;
 
@@ -19,6 +20,7 @@ public class Chest : MonoBehaviour
             {
                 SignE.SetActive(false);
                 ChestIs = true;
+                WinText.SetActive(true);
             }
         }
 
@@ -32,5 +34,12 @@ public class Chest : MonoBehaviour
         {
             SignE.SetActive(false);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape) && WinText.activeSelf == true)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene("Menu");
+        }
+
     }
 }

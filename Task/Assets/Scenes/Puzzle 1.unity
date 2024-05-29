@@ -56963,6 +56963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e1d2949905e70047915cc79ffea602d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WinText: {fileID: 1982575431}
   SignE: {fileID: 345333669}
   Player: {fileID: 1369713332}
   ChestIs: 0
@@ -67912,6 +67913,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
+--- !u!1 &1982575431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1296149590674668756, guid: a361f008e59b5ef4db264d593e770d80,
+    type: 3}
+  m_PrefabInstance: {fileID: 8798264599910975346}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1984892871
 PrefabInstance:
   m_ObjectHideFlags: 0
