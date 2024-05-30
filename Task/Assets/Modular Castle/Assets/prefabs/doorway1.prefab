@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 499586}
   - component: {fileID: 3377978}
   - component: {fileID: 2399112}
-  - component: {fileID: 3115270763158079608}
-  - component: {fileID: 4461582875487947006}
+  - component: {fileID: -6649875775592754046}
+  - component: {fileID: 4469661981555049982}
   m_Layer: 0
   m_Name: doorway1
   m_TagString: Untagged
@@ -82,7 +82,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &3115270763158079608
+--- !u!65 &-6649875775592754046
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,7 +95,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.999999, y: 10.016069, z: 2.0354683}
   m_Center: {x: 0, y: 4.9919643, z: 0.00000059604645}
---- !u!82 &4461582875487947006
+--- !u!82 &4469661981555049982
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,7 +106,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 02f0ce487150cba4f986a55c7520779b, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 448002}
   - component: {fileID: 3392856}
   - component: {fileID: 2396532}
-  - component: {fileID: 7429650792827807241}
+  - component: {fileID: -203814464566560038}
   m_Layer: 0
   m_Name: floor1
   m_TagString: Untagged
@@ -80,7 +80,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &7429650792827807241
+--- !u!65 &-203814464566560038
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

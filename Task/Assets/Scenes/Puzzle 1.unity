@@ -1525,6 +1525,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4571224494373324251, guid: a8eecfd08902b2147b752874970f5849,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fa38dc6850ab7264e95e9cd13cad080a, type: 2}
     - target: {fileID: 4691470102014521022, guid: a8eecfd08902b2147b752874970f5849,
         type: 3}
       propertyPath: Player
@@ -12623,6 +12628,89 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c0271048eff2534bbd7399d0a4ca800, type: 3}
+--- !u!1 &263816123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1839805142000035816, guid: dba16dd95d310cf4d9857e0691a5fbbb,
+    type: 3}
+  m_PrefabInstance: {fileID: 2907236388163673801}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 263816126}
+  - component: {fileID: 263816125}
+  - component: {fileID: 263816124}
+  m_Layer: 0
+  m_Name: Arm01 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &263816124
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 977209248209184680, guid: dba16dd95d310cf4d9857e0691a5fbbb,
+    type: 3}
+  m_PrefabInstance: {fileID: 2907236388163673801}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263816123}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 6800207999762024222, guid: b271160f5bff89144a5055fe69972dd8, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &263816125
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 7222105505060081657, guid: dba16dd95d310cf4d9857e0691a5fbbb,
+    type: 3}
+  m_PrefabInstance: {fileID: 2907236388163673801}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263816123}
+  m_Mesh: {fileID: 8470459441657722356, guid: b271160f5bff89144a5055fe69972dd8, type: 3}
+--- !u!4 &263816126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4711182437294637091, guid: dba16dd95d310cf4d9857e0691a5fbbb,
+    type: 3}
+  m_PrefabInstance: {fileID: 2907236388163673801}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263816123}
+  m_LocalRotation: {x: -0.10622382, y: 0.30017987, z: -0.026498698, w: 0.9475792}
+  m_LocalPosition: {x: 407.7839, y: 99.156715, z: -133.94035}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 867
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &264258600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16006,6 +16094,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4571224494373324251, guid: a8eecfd08902b2147b752874970f5849,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fa38dc6850ab7264e95e9cd13cad080a, type: 2}
     - target: {fileID: 4691470102014521022, guid: a8eecfd08902b2147b752874970f5849,
         type: 3}
       propertyPath: Player
@@ -19611,6 +19704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4461582875487947006, guid: 0b7f3b033306b6d4b956436528383403, type: 3}
+    - {fileID: 4469661981555049982, guid: 0b7f3b033306b6d4b956436528383403, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0b7f3b033306b6d4b956436528383403, type: 3}
 --- !u!4 &433072405 stripped
 Transform:
@@ -22480,6 +22574,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4571224494373324251, guid: a8eecfd08902b2147b752874970f5849,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fa38dc6850ab7264e95e9cd13cad080a, type: 2}
     - target: {fileID: 4691470102014521022, guid: a8eecfd08902b2147b752874970f5849,
         type: 3}
       propertyPath: Player
@@ -23931,6 +24030,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4571224494373324251, guid: a8eecfd08902b2147b752874970f5849,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fa38dc6850ab7264e95e9cd13cad080a, type: 2}
     - target: {fileID: 4691470102014521022, guid: a8eecfd08902b2147b752874970f5849,
         type: 3}
       propertyPath: Player
@@ -35993,9 +36097,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 765800083}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &763666826 stripped
+--- !u!82 &763666827 stripped
 AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4461582875487947006, guid: 0b7f3b033306b6d4b956436528383403,
+  m_CorrespondingSourceObject: {fileID: 4469661981555049982, guid: 0b7f3b033306b6d4b956436528383403,
     type: 3}
   m_PrefabInstance: {fileID: 765800083}
   m_PrefabAsset: {fileID: 0}
@@ -36011,7 +36115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c022def67d73134da738267403ec842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorOpening: {fileID: 763666826}
+  DoorOpening: {fileID: 763666827}
   Player: {fileID: 1369713332}
   DoorInDoor: {fileID: 1183946418}
   SignE: {fileID: 311189750}
@@ -44189,7 +44293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c022def67d73134da738267403ec842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorOpening: {fileID: 932978073}
+  DoorOpening: {fileID: 932978074}
   Player: {fileID: 1369713332}
   DoorInDoor: {fileID: 1737134131}
   SignE: {fileID: 659556064}
@@ -44197,9 +44301,9 @@ MonoBehaviour:
   rotateTime: 1
   Distance: 10
   DoorIs: 0
---- !u!82 &932978073 stripped
+--- !u!82 &932978074 stripped
 AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4461582875487947006, guid: 0b7f3b033306b6d4b956436528383403,
+  m_CorrespondingSourceObject: {fileID: 4469661981555049982, guid: 0b7f3b033306b6d4b956436528383403,
     type: 3}
   m_PrefabInstance: {fileID: 511479769}
   m_PrefabAsset: {fileID: 0}
@@ -50711,6 +50815,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 4571224494373324251, guid: a8eecfd08902b2147b752874970f5849,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fa38dc6850ab7264e95e9cd13cad080a, type: 2}
     - target: {fileID: 4691470102014521022, guid: a8eecfd08902b2147b752874970f5849,
         type: 3}
       propertyPath: Player
@@ -52639,7 +52748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c022def67d73134da738267403ec842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorOpening: {fileID: 1116377329}
+  DoorOpening: {fileID: 1116377330}
   Player: {fileID: 1369713332}
   DoorInDoor: {fileID: 81968813}
   SignE: {fileID: 295193425}
@@ -52647,9 +52756,9 @@ MonoBehaviour:
   rotateTime: 1
   Distance: 10
   DoorIs: 0
---- !u!82 &1116377329 stripped
+--- !u!82 &1116377330 stripped
 AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4461582875487947006, guid: 0b7f3b033306b6d4b956436528383403,
+  m_CorrespondingSourceObject: {fileID: 4469661981555049982, guid: 0b7f3b033306b6d4b956436528383403,
     type: 3}
   m_PrefabInstance: {fileID: 548469162}
   m_PrefabAsset: {fileID: 0}
@@ -60439,6 +60548,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4571224494373324251, guid: a8eecfd08902b2147b752874970f5849,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fa38dc6850ab7264e95e9cd13cad080a, type: 2}
     - target: {fileID: 4691470102014521022, guid: a8eecfd08902b2147b752874970f5849,
         type: 3}
       propertyPath: Player
@@ -60720,12 +60834,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 878121900}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &1278420717 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4461582875487947006, guid: 0b7f3b033306b6d4b956436528383403,
-    type: 3}
-  m_PrefabInstance: {fileID: 878121900}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1278420720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60738,7 +60846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c022def67d73134da738267403ec842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorOpening: {fileID: 1278420717}
+  DoorOpening: {fileID: 1278420723}
   Player: {fileID: 1369713332}
   DoorInDoor: {fileID: 390815366}
   SignE: {fileID: 1791056830}
@@ -60746,19 +60854,12 @@ MonoBehaviour:
   rotateTime: 1
   Distance: 10
   DoorIs: 0
---- !u!65 &1278420721
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!82 &1278420723 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4469661981555049982, guid: 0b7f3b033306b6d4b956436528383403,
+    type: 3}
+  m_PrefabInstance: {fileID: 878121900}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1278420716}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 7.999999, y: 10.016069, z: 2.0354683}
-  m_Center: {x: 0, y: 4.9919643, z: 0.00000059604645}
 --- !u!1001 &1279975155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69134,6 +69235,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4571224494373324251, guid: a8eecfd08902b2147b752874970f5849,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fa38dc6850ab7264e95e9cd13cad080a, type: 2}
     - target: {fileID: 4691470102014521022, guid: a8eecfd08902b2147b752874970f5849,
         type: 3}
       propertyPath: Player
@@ -70306,6 +70412,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 4571224494373324251, guid: a8eecfd08902b2147b752874970f5849,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fa38dc6850ab7264e95e9cd13cad080a, type: 2}
     - target: {fileID: 4691470102014521022, guid: a8eecfd08902b2147b752874970f5849,
         type: 3}
       propertyPath: Player
@@ -70976,6 +71087,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4571224494373324251, guid: a8eecfd08902b2147b752874970f5849,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fa38dc6850ab7264e95e9cd13cad080a, type: 2}
     - target: {fileID: 4691470102014521022, guid: a8eecfd08902b2147b752874970f5849,
         type: 3}
       propertyPath: Player
@@ -78880,6 +78996,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4571224494373324251, guid: a8eecfd08902b2147b752874970f5849,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fa38dc6850ab7264e95e9cd13cad080a, type: 2}
     - target: {fileID: 4691470102014521022, guid: a8eecfd08902b2147b752874970f5849,
         type: 3}
       propertyPath: Player
@@ -81000,6 +81121,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4571224494373324251, guid: a8eecfd08902b2147b752874970f5849,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fa38dc6850ab7264e95e9cd13cad080a, type: 2}
     - target: {fileID: 4691470102014521022, guid: a8eecfd08902b2147b752874970f5849,
         type: 3}
       propertyPath: Player
@@ -85901,6 +86027,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4571224494373324251, guid: a8eecfd08902b2147b752874970f5849,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fa38dc6850ab7264e95e9cd13cad080a, type: 2}
     - target: {fileID: 4691470102014521022, guid: a8eecfd08902b2147b752874970f5849,
         type: 3}
       propertyPath: Player
@@ -89799,12 +89930,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 267246355}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &1930573962 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4461582875487947006, guid: 0b7f3b033306b6d4b956436528383403,
-    type: 3}
-  m_PrefabInstance: {fileID: 267246355}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1930573965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89817,7 +89942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e102b82d3b13724dbb018c6b6bc5935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorOpening: {fileID: 1930573962}
+  DoorOpening: {fileID: 1930573968}
   Player: {fileID: 1369713332}
   SignE: {fileID: 750690914}
   Key: {fileID: 1770353713}
@@ -89825,19 +89950,12 @@ MonoBehaviour:
   targetYAngle: 1000
   rotateTime: 1
   Distance: 10
---- !u!65 &1930573966
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!82 &1930573968 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4469661981555049982, guid: 0b7f3b033306b6d4b956436528383403,
+    type: 3}
+  m_PrefabInstance: {fileID: 267246355}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1930573961}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 7.999999, y: 10.016069, z: 2.0354683}
-  m_Center: {x: 0, y: 4.9919643, z: 0.00000059604645}
 --- !u!1001 &1931607226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -90954,6 +91072,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4571224494373324251, guid: a8eecfd08902b2147b752874970f5849,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fa38dc6850ab7264e95e9cd13cad080a, type: 2}
     - target: {fileID: 4691470102014521022, guid: a8eecfd08902b2147b752874970f5849,
         type: 3}
       propertyPath: Player
@@ -91988,7 +92111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c022def67d73134da738267403ec842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorOpening: {fileID: 1980679687}
+  DoorOpening: {fileID: 1980679688}
   Player: {fileID: 1369713332}
   DoorInDoor: {fileID: 993107090}
   SignE: {fileID: 1719990309}
@@ -91996,9 +92119,9 @@ MonoBehaviour:
   rotateTime: 1
   Distance: 10
   DoorIs: 0
---- !u!82 &1980679687 stripped
+--- !u!82 &1980679688 stripped
 AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4461582875487947006, guid: 0b7f3b033306b6d4b956436528383403,
+  m_CorrespondingSourceObject: {fileID: 4469661981555049982, guid: 0b7f3b033306b6d4b956436528383403,
     type: 3}
   m_PrefabInstance: {fileID: 1434351095}
   m_PrefabAsset: {fileID: 0}
@@ -95257,6 +95380,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4571224494373324251, guid: a8eecfd08902b2147b752874970f5849,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fa38dc6850ab7264e95e9cd13cad080a, type: 2}
     - target: {fileID: 4691470102014521022, guid: a8eecfd08902b2147b752874970f5849,
         type: 3}
       propertyPath: Player
@@ -99332,6 +99460,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser
       objectReference: {fileID: 0}
+    - target: {fileID: 4571224494373324251, guid: a8eecfd08902b2147b752874970f5849,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fa38dc6850ab7264e95e9cd13cad080a, type: 2}
     - target: {fileID: 4691470102014521022, guid: a8eecfd08902b2147b752874970f5849,
         type: 3}
       propertyPath: Player
@@ -99553,7 +99686,7 @@ PrefabInstance:
     - target: {fileID: 5743258713189949720, guid: a361f008e59b5ef4db264d593e770d80,
         type: 3}
       propertyPath: m_Radius
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8335763471487586467, guid: a361f008e59b5ef4db264d593e770d80,
         type: 3}
@@ -99578,7 +99711,7 @@ PrefabInstance:
     - target: {fileID: 8798264598545477063, guid: a361f008e59b5ef4db264d593e770d80,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 88
+      value: 125.8
       objectReference: {fileID: 0}
     - target: {fileID: 8798264598545477063, guid: a361f008e59b5ef4db264d593e770d80,
         type: 3}
