@@ -32,6 +32,7 @@ Transform:
   m_Children:
   - {fileID: 5026881671357668910}
   - {fileID: 3250177741757980106}
+  - {fileID: 2586507550960697353}
   m_Father: {fileID: 8798264598808509486}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1285,7 +1286,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0208e1aae1c1124b844f8ac5fce8b18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BackgroundMusic: {fileID: 0}
+  DeathSound: {fileID: 0}
   GameOverUI: {fileID: 0}
+  PlayerIsDead: 0
 --- !u!136 &5743258713189949720
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1296,8 +1300,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1
+  m_Radius: 2
+  m_Height: 5
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8798264598808509481
@@ -1329,7 +1333,6 @@ Transform:
   m_Children:
   - {fileID: 8798264600313832278}
   - {fileID: 1811991482221560882}
-  - {fileID: 2586507550960697353}
   m_Father: {fileID: 8798264598545477063}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1495,7 +1498,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 8798264598808509486}
+    m_TransformParent: {fileID: 1811991482221560882}
     m_Modifications:
     - target: {fileID: 1839805142000035816, guid: dba16dd95d310cf4d9857e0691a5fbbb,
         type: 3}
