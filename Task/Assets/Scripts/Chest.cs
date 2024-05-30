@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Chest : MonoBehaviour
 {
+    public AudioSource ChestSound;
     public GameObject WinText;
     public GameObject SignE;
     public GameObject Player;
@@ -23,6 +24,7 @@ public class Chest : MonoBehaviour
                 WinText.SetActive(true);
                 Player.GetComponent<PlayerController>().enabled = false;
                 Player.GetComponent<CameraController>().enabled = false;
+                ChestSound.Play();
             }
         }
 
