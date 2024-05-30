@@ -24,7 +24,9 @@ public class Chest : MonoBehaviour
                 WinText.SetActive(true);
                 Player.GetComponent<PlayerController>().enabled = false;
                 Player.GetComponent<CameraController>().enabled = false;
+                Player.GetComponent<AudioSource>().enabled = false;
                 ChestSound.Play();
+                
             }
         }
 

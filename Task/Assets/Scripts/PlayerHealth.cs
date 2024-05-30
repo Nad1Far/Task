@@ -5,7 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public AudioSource BackgroundMusic;
+    public AudioSource DeathSound;
     public GameObject GameOverUI;
+
+    public bool PlayerIsDead = false;
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Bullet" || other.gameObject.tag == "Laser" || other.gameObject.tag == "Shape")
@@ -14,11 +18,19 @@ public class PlayerHealth : MonoBehaviour
             GetComponent<PlayerController>().enabled = false;
             GetComponent<CameraController>().enabled = false;
             Cursor.lockState = CursorLockMode.None;
+            PlayerIsDead = true;
+            BackgroundMusic.Stop();
+            DeathSound.Play();
         }
     }
 
     private void Update()
     {
+        if (PlayerIsDead == true)
+        {
+            GetComponent<CapsuleCollider>().isTrigger = false;
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape) && GameOverUI.activeSelf == true)
         {
             SceneManager.LoadScene("Menu");
