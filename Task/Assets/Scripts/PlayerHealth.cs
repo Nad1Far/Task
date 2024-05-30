@@ -9,6 +9,7 @@ public class PlayerHealth : MonoBehaviour
     public AudioSource DeathSound;
     public GameObject StartUI;
     public GameObject GameOverUI;
+    public GameObject MenuUI;
 
     public bool PlayerIsDead = false;
 
@@ -41,13 +42,13 @@ public class PlayerHealth : MonoBehaviour
             GetComponent<CapsuleCollider>().isTrigger = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape) && GameOverUI.activeSelf == true)
+        if (Input.GetKeyDown(KeyCode.Escape) && GameOverUI.activeSelf == true && MenuUI.activeSelf == false)
         {
             SceneManager.LoadScene("Menu");
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Space) && StartUI.activeSelf == true)
+        if (Input.GetKeyDown(KeyCode.Space) && StartUI.activeSelf == true && MenuUI.activeSelf == false)
         {
             StartUI.SetActive(false);
             GetComponent<PlayerController>().enabled = true;
@@ -59,5 +60,27 @@ public class PlayerHealth : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
+
+        if (StartUI.activeSelf == false && GameOverUI.activeSelf == false && MenuUI.activeSelf == false && Input.GetKey(KeyCode.Tab))
+        {
+            MenuUI.SetActive(true);
+            BackgroundMusic.Pause();
+            GetComponent<PlayerController>().enabled = false;
+            GetComponent<CameraController>().enabled = false;
+        }
+
+        if (Input.GetKey(KeyCode.Escape) && MenuUI.activeSelf == true)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene("Menu");
+        }
+
+        if (Input.GetKey(KeyCode.Space) && MenuUI.activeSelf == true)
+        {
+            MenuUI.SetActive(false);
+            BackgroundMusic.UnPause();
+            GetComponent<PlayerController>().enabled = true;
+            GetComponent<CameraController>().enabled = true;
+        }
     }
 }

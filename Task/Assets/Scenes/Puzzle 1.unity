@@ -18426,6 +18426,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+--- !u!1 &410523727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7015805648278547020, guid: a361f008e59b5ef4db264d593e770d80,
+    type: 3}
+  m_PrefabInstance: {fileID: 8798264599910975346}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &412142175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99594,6 +99600,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1197502221598063896, guid: a361f008e59b5ef4db264d593e770d80,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2073371055096646797, guid: a361f008e59b5ef4db264d593e770d80,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2128530812082859800, guid: a361f008e59b5ef4db264d593e770d80,
+        type: 3}
+      propertyPath: MenuUI
+      value: 
+      objectReference: {fileID: 410523727}
     - target: {fileID: 2128530812082859800, guid: a361f008e59b5ef4db264d593e770d80,
         type: 3}
       propertyPath: StartUI
@@ -99619,6 +99640,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3418358483242378110, guid: a361f008e59b5ef4db264d593e770d80,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3785192180357279212, guid: a361f008e59b5ef4db264d593e770d80,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -99637,6 +99663,11 @@ PrefabInstance:
     - target: {fileID: 5743258713189949720, guid: a361f008e59b5ef4db264d593e770d80,
         type: 3}
       propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5825177629425791067, guid: a361f008e59b5ef4db264d593e770d80,
+        type: 3}
+      propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8335763471487586467, guid: a361f008e59b5ef4db264d593e770d80,
